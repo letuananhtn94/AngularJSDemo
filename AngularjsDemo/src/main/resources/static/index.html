@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="myApp">
+<head>
+	<title>AngularJS Demo</title>
+	
+	<!-- Library CSS -->
+	<link rel="stylesheet" href="/fresher/css/fresher.css">
+	<link rel="stylesheet" href="/fresher/css/cssSelector.css">
+	
+	<!-- Library Script -->
+	<!-- jQuery -->
+	<script src="/fresher/libs/jquery/jquery-3.2.0.min.js"></script>
+	
+	<!-- AngularJS -->
+	<script src="/fresher/libs/angular-1.6.3/angular.min.js"></script>
+	<script src="/fresher/libs/angular-1.6.3/angular-resource.js"></script>
+	<script src="/fresher/libs/angular-1.6.3/angular-route.js"></script>
+	
+	<script src="/fresher/js/app.js"></script>
+		
+	<script src="/fresher/js/jQuerySelector.js"></script>
+	
+	<script src="/fresher/js/controller/fresherController.js"></script>
+	
+	<script src="/fresher/js/directive/customDirective.js"></script>
+	
+	
+</head>
+<body>
+	<div id="_main" ng-controller="FreshersController">
+		<!-- Menu -->
+		<div id="_col_left">
+			<h1>Menu</h1>
+			<ul id="nav">
+				<li><a href="#">Home Page</a></li>
+				<li><a href="#fresherlist">Fresher List</a></li>
+				<li><a href="#about">About Me</a></li>
+				
+				<li><a href="#login">Login</a></li>
+				 				
+			</ul>
+		</div>
+		
+		<!-- Content -->
+		<div id="_col_right">
+			<div ng-view></div>			
+		</div>
+	</div>
+	<script>
+	
+	</script>
+	
+</body>
+</html>
